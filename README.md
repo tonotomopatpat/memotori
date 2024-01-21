@@ -1,7 +1,7 @@
 <p align="center">
     <br>
     <a href="https://mihon.app">
-        ![image-removebg-preview](https://github.com/Paytonista/memotori/assets/118042245/fa6d29ff-2532-468e-b306-128caf1b67b9)
+        [image-removebg-preview](https://github.com/Paytonista/memotori/assets/118042245/fa6d29ff-2532-468e-b306-128caf1b67b9)
 
         
     </a>
