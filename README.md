@@ -1,7 +1,7 @@
 <p align="center">
     <br>
-    <a href="https://mihon.app">
-        <img src="./logo.png" width="90"/>
+    <a href="_blank_">
+        <img src="./res/logo.png" width="90"/>
     </a>
 </p>
 
