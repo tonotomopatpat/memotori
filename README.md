@@ -1,7 +1,7 @@
 <p align="center">
     <br>
     <a href="https://mihon.app">
-        <img src="./.github/memotori_icon.png" width="90"/>
+        <img src="./.github/logo.png" width="90"/>
     </a>
 </p>
 
