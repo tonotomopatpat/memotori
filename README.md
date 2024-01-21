@@ -5,7 +5,7 @@
     </a>
 </p>
 
-<h1 align="center">Memotori <a href="#">App</a></h1>
+<h1 align="center">Memotori </h1>
 <h3 align="center">Online NotePad</h3>
 <p align="center">Sync your notes in the web – easier than ever.</p>
 
