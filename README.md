@@ -13,13 +13,11 @@
 
 <h3>Features include</h3>
 <ul>
-    <li>Local reading of content</li>
-    <li>A configurable reader with multiple viewers, reading directions and other settings.</li>
-    <li>Tracker support: <a target="_blank" href="https://myanimelist.net/">MyAnimeList</a>, <a target="_blank" href="https://anilist.co/">AniList</a>, <a target="_blank" href="https://kitsu.io/">Kitsu</a>, <a target="_blank" href="https://mangaupdates.com">MangaUpdates</a>, <a target="_blank" href="https://shikimori.one">Shikimori</a>, and <a target="_blank" href="https://bgm.tv/">Bangumi</a> support</li>
-    <li>Categories to organize your library</li>
+    <li>No registration</li>
+    <li>A configurable notepad with multiple viewers, reading directions and other settings.</li>
+    <li>Categories to organize your notes</li>
     <li>Light and dark themes</li>
-    <li>Schedule updating your library for new chapters</li>
-    <li>Create backups locally to read offline or to your desired cloud service</li>
+    <li>Create backups locally</li>
     <li>and much more...</li>
 </ul>
 
