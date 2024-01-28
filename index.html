@@ -16,7 +16,7 @@
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
           width: 100%;
-    overflow-x: hidden;
+          overflow-x: hidden;
         }
 
         .navbar {
@@ -42,18 +42,18 @@
           color: #e6e6e6;
         }
         @media screen and (max-width: 600px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
+          .navbar a {
+            float: none;
+            width: 100%;
+          }
+        }
 
         #notepad {
-          width: 1000px;
-          height: 650px;
+          width: 80%; /* adjust as needed */
+          height: 100vh; /* adjust as needed */
           border: 1px solid #ccc;
           padding: 10px;
-
+          overflow: auto;
           background-color: #fff;
           margin: 0 auto;
           margin-top: 10px;
@@ -66,6 +66,9 @@
           outline: none;
           resize: none;
         }
+        #textarea::placeholder {
+  font-size: 1vw; /* adjust as needed */
+}
       </style>
     </head>
     <body>
