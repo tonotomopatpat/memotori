@@ -11,10 +11,13 @@
         type="./Memotori/res/logo.png"
         href="favicon.ico"
       />
+      <script src="canvassScript.js"></script>
       <style>
         body {
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
+          width: 100%;
+          overflow-x: hidden;
         }
 
         .navbar {
@@ -38,45 +41,60 @@
         .navbar a.active {
           background-color: #0a7557;
           color: #e6e6e6;
-
         }
+        @media screen and (max-width: 600px) {
+          .navbar a {
+            float: none;
+            width: 100%;
+          }
+        }
+
         #notepad {
-  width: 60%;
-  height: 650px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  overflow: auto;
-  background-color: #fff;
-  margin: 0 auto;
-}
+          position: relative;
+          width: 80%; 
+          height: 100vh; 
+          border: 1px solid #ccc;
+          padding: 10px;
+          
+          background-color: #fff;
+          margin: 0 auto;
+        }
+
+        #drawingCanvas,
+        #textarea {
+          position: absolute; 
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
 
         #textarea {
-            width: 100%;
-            height: 100%;
-            border: none;
-            outline: none;
-            resize: none;
+          background: transparent; 
+        }
+        #textarea::placeholder {
+          font-size: 1vw; /* adjust as needed */
         }
       </style>
     </head>
     <body>
       <div class="navbar">
-        <a class="active" href="#home">placeholder</a> 
-        <a href="#news">news</a> 
-        <a href="#contact">workspace</a> 
-        <a href="#about">settings</a> 
-      </div>
-      <!--
-      <div style="padding:20px;margin-top:30px;background-color:#2bedb7;">
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem Ipsum</p>
-      </div>
-      -->
 
+        <a class="active" href="#home">Workspace</a>
+        <a href="#news">works</a>
+        <a href="#contact">settings</a>
+        <a href="#about">folder</a>
+        
+>>>>>>> upstream/main:workspace.html
+      </div>
+      <button id="toggleDrawingMode">Toggle Drawing Mode</button>
+      <button id="eraser">Eraser</button>
+      
       <div id="notepad">
+        
+        <canvas id="drawingCanvas"></canvas>
         <textarea id="textarea" placeholder="Start typing..."></textarea>
-    </div>
-
+      </div>
     </body>
   </div>
 </html>
