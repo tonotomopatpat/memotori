@@ -81,10 +81,10 @@ header{
 }
 
 .domain-expansion{
+
     height: 100%;
     width:100%;
     min-height: 100vh;
- 
     position: relative;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -133,3 +133,12 @@ section{
     text-align: center;
     
 }
+.container{
+    color: #fff;
+    font-weight: 1000px;
+    font-weight: bold;
+}
+
+
+
+
