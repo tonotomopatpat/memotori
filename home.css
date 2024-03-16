@@ -124,3 +124,12 @@ section{
 .main-img{
     position: relative;
 }
+
+#homepage-third-div{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(98, 119, 98);
+    text-align: center;
+    
+}
