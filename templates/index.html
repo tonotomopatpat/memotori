@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        
+    </style>
+
+    <script>
+        function createTextEntry() {
+            var url = document.getElementById("urlInput").value;
+            fetch('/create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ url: url })
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Failed to create text entry');
+                }
+            })
+            .then(data => {
+                // Update the URL without reloading the page
+                history.pushState({}, '', `/view/${data.url}`);
+                // Redirect to the view page for the created URL
+                window.location.reload(); // Reload the page to reflect the changes
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +59,7 @@
     
 </head>
 <body>
+
     <header>
         <a href="#" class="logo">MEMOTORI</a>
         <ul class="navlist">
@@ -44,7 +77,10 @@
             <span class="blur"></span>
             <h5>Power up your Notetaking ideas with</h5>
             <span><h1>MemoTORI!</h1></span>
-            <button class="imasugu"><a href="./workspace/workspace.html">今すぐ書こう</a></button>
+            <p>Input Url:</hp><br>
+
+            <input type="text" id="urlInput" placeholder="Enter URL">
+            <button onclick="createTextEntry()">Go</button>
             <p>The safest site on the web for storing your text!<br>
                 Enter any URL, e.g. memotori.com/anything<br>
                 You find it - it's yours!<br>
@@ -53,7 +89,7 @@
                 <a href="#">Notes</a>
                 <a href="#">Edit</a>
         </div>
-        <div class="main-img"><img src="logo.png"></div>
+        <div class="main-img"><img src="{{ url_for('static', filename='logo.png') }}" alt="Logo"></div>
     </section>
     <section class="container" style="color: #ccc;" >
         <h3>asdsdsaddasddadas</h3>
